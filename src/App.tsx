@@ -53,8 +53,8 @@ function App() {
             taskName.current.value = null;
         }
 
-        console.log(name)
     }
+    //to do button
     const handleClick = ()=>{
         // @ts-ignore
         setProgress([...progress,...task])
@@ -64,7 +64,7 @@ function App() {
         setTerminate([...terminate,...task])
         setTask([])
     }
-
+    //progress button
     const handleClickTD = ()=>{
         setTask([...task,...progress])
         setProgress([])
@@ -73,7 +73,7 @@ function App() {
         setTerminate([...terminate,...progress])
         setProgress([])
     }
-
+    //finish button
     const handleClickToD = ()=>{
         setTask([...task,...terminate])
         setTerminate([])
